@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import { requireAuth } from "@/lib/auth-utils";
 import { caller } from "@/trpc/server";
 
@@ -9,6 +10,7 @@ export default async function Home() {
     <div className="">
       protected server component
       {JSON.stringify(data)}
+      <Button>Click me</Button>
     </div>
   );
 }
